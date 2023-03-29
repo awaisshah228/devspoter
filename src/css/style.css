@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&family=Inter:wght@400;500;700&display=fallback');
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+
+/* Additional styles */
+@import 'additional-styles/utility-patterns.css';
+@import 'additional-styles/range-slider.css';
+@import 'additional-styles/toggle-switch.css';
+@import 'additional-styles/theme.css';
+
+@import 'tailwindcss/utilities';
+
+/* Additional Tailwind directives: https://tailwindcss.com/docs/functions-and-directives/#responsive */
+@layer utilities {
+  .rtl {
+    direction: rtl;
+  }
+
+  .banner-bg {
+    background-image: url(../images/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    padding: 120px 0 0;
+    overflow: hidden;
+    /* @apply dark; */
+  }
+  .tech-stack-card{
+    /* background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%); */
+    background-image: linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% );
+  }
+
+  .banner-area::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(90deg, #646974 0%, #000000 100%);
+    /* opacity: 0.; */
+
+    /* background: linear-gradient(360deg, #0b1d33 0%, rgba(11, 29, 51, 0) 97.51%,#0b1d33 0%); */
+    /* background: linear-gradient(360deg, #4b6cb7 5.68%,rgba(24,40,72,.42) 81.9%); */
+    /* transform: matrix(1, 0, 0, -1, 0, 0); */
+    opacity: 0.9;
+  }
+}
+
+/* See Alpine.js: https://github.com/alpinejs/alpine#x-cloak */
+[x-cloak=""] {
+  display: none;
+}
+.swiper-wrapper {
+  transition-timing-function: linear;
+}
+
+
+/* .swiper {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    text-align: center;
+    color: black;
+  } */
