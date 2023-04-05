@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import Dropdown from "../utils/Dropdown"
 import Transition from "../utils/Transition"
 import logo from '../images/logo.png'
+import logo2 from '../images/logo2.png'
 
 function Header() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false)
@@ -63,7 +64,10 @@ function Header() {
           <div className="shrink-0 mr-5">
             {/* Logo */}
             <Link to="/" className="block" aria-label="Cruip">
-              <img src={logo} alt="" width={50} height={50} />
+              {
+                darkMode?  <img src={logo2} alt="" width={150} height={80} />: <img src={logo} alt="" width={150} height={80} />
+              }
+              {/* <img src={logo} alt="" width={150} height={80} /> */}
               {/* <svg
                 className="w-8 h-8"
                 viewBox="0 0 32 32"
@@ -297,7 +301,7 @@ function Header() {
                 <div className="py-6 pr-4 pl-20">
                   {/* Logo */}
                   <Link to="/" className="inline-block mb-4" aria-label="Cruip">
-                  <img src={logo} alt="" width={50} height={50} />
+                  <img src={logo} alt="" width={180} height={150} />
 
                     {/* <svg
                       className="w-8 h-8"
@@ -408,7 +412,7 @@ function Header() {
                     <li>
                       <Link
                         to="/contact"
-                        className="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded text-white bg-green-100 hover:bg-green-400 transition duration-150 ease-in-out"
+                        className="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded btn-sm text-white bg-teal-500 hover:bg-teal-400 "
                       >
                         Inquire Now
                       </Link>

@@ -6,11 +6,11 @@ import Career4 from '../images/career-04.jpg'
 
 function ProjectItem({title,desc,image,tech,subtitle}) {
   return (
-    <div className="flex flex-col  rounded overflow-hidden shadow-lg bg-zinc-400">
+    <div className="flex flex-col  rounded overflow-hidden shadow-lg bg-slate-200">
       <img className="w-full  h-80 " src={image} alt="Sunset in the mountains"  style={{objectFit:"cover"}}  />
       <div className="px-6 py-4">
-        <div className="font-bold text-xl mb-2">{title}</div>
-        <div className="font-bold text-medium mb-2">{subtitle}</div>
+        <div className="font-bold text-xl mb-2 text-gray-700">{title}</div>
+        <div className="font-bold text-medium mb-2  text-gray-500">{subtitle}</div>
         <p className="text-gray-700 text-base">
           {desc}
         </p>

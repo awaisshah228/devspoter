@@ -27,7 +27,7 @@ function Footer() {
             <div className="md:flex md:items-center md:justify-between">
 
                 {/* Social links */}
-                <ul className="flex mb-4 md:order-2 md:ml-4 md:mb-0">
+                {/* <ul className="flex mb-4 md:order-2 md:ml-4 md:mb-0">
                     <li>
                         <a className="flex justify-center items-center text-white bg-teal-500 dark:text-teal-500 dark:bg-gray-800 hover:underline hover:bg-teal-600 rounded-full transition duration-150 ease-in-out" href="#0" aria-label="Twitter">
                             <svg className="w-8 h-8 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
@@ -65,7 +65,7 @@ function Footer() {
                             </svg>
                         </a>
                     </li>
-                </ul>
+                </ul> */}
 
                 {/* Middle links */}
                 <div className="text-sm md:order-1 text-gray-700 mb-2 md:mb-0">
@@ -73,7 +73,9 @@ function Footer() {
                 </div>
 
                 {/* Copyrights note */}
-                <div className="text-gray-600 dark:text-gray-400 text-sm mr-4">&copy; All rights reserved.</div>
+                <div className="text-gray-600 dark:text-gray-400 text-sm mr-4">Ph: +92300-630-9300 <br/>
+                House # 16, street 43, G8/2, Islamabad
+                </div>
 
             </div>
 

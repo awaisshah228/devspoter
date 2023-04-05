@@ -23,7 +23,7 @@ const projects=[
         subtitle:"Web Development",
         desc:`With our highly skilled team of web developers, we designed a customized solution for a group of agencies to easily collect debt payments for their clients (banks).
         Our front-end developers used Angular to develop a reasonably customized and complex UI/UX to a pixel-perfect detail. The application's back-end was written in Python, and we deployed various data transformation and storage techniques/tools to deal with the high volume of data flow.`,
-        image:"https://devdisruptors.com/static/media/pic4.ff8d51bf.jpg",
+        image:Career1,
         tech:["Python","Django","Node","React","Mongodb"]
     },
     {

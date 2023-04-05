@@ -98,9 +98,9 @@ const handleSubmit = async(e) => {
                   <div className="w-full px-3">
                     <div className="flex justify-between items-center mb-1">
                       <label className="block text-gray-800 dark:text-gray-300 text-sm font-medium" htmlFor="message">Details</label>
-                      <span className="text-sm text-gray-500">Optional</span>
+                      {/* <span className="text-sm text-gray-500">Optional</span> */}
                     </div>
-                    <textarea id="message" rows="4" className="form-textarea w-full" placeholder="What do you want to build with Appy?" onChange={handleChangeInput} value={details} name='details'></textarea>
+                    <textarea id="message" rows="4" className="form-textarea w-full" placeholder="What do you want with us?" onChange={handleChangeInput} value={details} name='details'></textarea>
                   </div>
                 </div>
                
